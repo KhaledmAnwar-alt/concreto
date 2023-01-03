@@ -643,6 +643,47 @@ section {
   }
 }
 
+
+/*--------------------------------------------------------------
+# About-1
+--------------------------------------------------------------*/
+.about-1 .content h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.about-1 .content h3 {
+  font-weight: 500;
+  line-height: 32px;
+  font-size: 24px;
+}
+
+.about-1 .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-1 .content ul li {
+  padding: 10px 0 0 28px;
+  position: relative;
+}
+
+.about-1 .content ul i {
+  left: 0;
+  top: 7px;
+  position: absolute;
+  font-size: 20px;
+  color: #d9232d;
+}
+
+.about-1 .content p:last-child {
+  margin-bottom: 0;
+}
+
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -827,6 +868,21 @@ section {
 .why-us .box:hover h4,
 .why-us .box:hover p {
   color: #fff;
+}
+
+.post
+div.relative {
+  position: left;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+
+
+.post-1
+div.relative {
+  position: right;
+  right: 30px;
+  border: 3px solid #73AD21;
 }
 
 /*--------------------------------------------------------------

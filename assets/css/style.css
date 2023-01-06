@@ -1684,3 +1684,95 @@ div.relative {
   font-size: 13px;
   color: #fff;
 }
+
+/* 3.3 Section Resume */
+
+.section-3 .vertical-centred {
+  padding-top: 6rem;
+}
+
+.resume-title {
+  position: relative;
+  color: #fff;
+  margin: 0 0 2rem;
+}
+
+.resume-header {
+  position: relative;
+  z-index: 2;
+  top: 2rem;
+  padding: 0px 0rem;
+  transition: all 0.5s;
+}
+
+.resume-row {
+  position: relative;
+  padding-bottom: 2.2rem;
+  margin-bottom: 2.2rem;
+  border-bottom: 1px solid #fff;
+  transition: all 0.5s;
+}
+
+.resume-row:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: 0;
+}
+
+.col-resume {
+  position: relative;
+  top: 40px;
+  padding: 3.2rem 3.6rem 7.6rem;
+  background: #0c737a77;
+  transition: background 0.5s ease 0s, top 0.5s ease 0s;
+  width: 75%;
+  margin-left: 150px !important;
+}
+
+.col-resume2 {
+  position: relative;
+  top: 0;
+  padding: 5.2rem 3.6rem 11.6rem;
+  background: #0c737a77;
+  transition: background 0.5s, top 0.5s;
+  width: 75%;
+}
+
+.col-resume:hover {
+  background: #6d0a0f;
+}
+
+.col-resume2:hover {
+  background: #6d0a0f;
+}
+
+.resume-type {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  position: relative;
+  font-size: 1.125rem;
+  margin-bottom: 1.2rem;
+  transition: all 0.5s;
+}
+
+.resume-study {
+  margin-bottom: 1rem;
+}
+
+.resume-date {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.resume-text {
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+  color: white;
+  text-align: justify;
+}
+
+.resume-text.last {
+  margin-bottom: 0;
+}

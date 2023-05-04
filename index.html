@@ -27,6 +27,51 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+
+
+
+  <!-- Custom CSS -->
+<style>
+
+#video-carousel {
+position: relative;
+width: 100%;
+height: 500px;
+overflow: hidden;
+ }
+  
+  
+#video-carousel video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: fill !important;
+}
+  
+#video-carousel .carousel {
+  position: absolute;
+  /* bottom: 0;
+  left: 0;
+  padding: 20px; */
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+  
+  
+  
+#video-carousel .carousel h2 {
+   margin-top: 0;
+}
+  
+  
+  
+#video-carousel .carousel p {
+   margin-bottom: 0;
+}
+
+  </style>
 </head>
 
 <body>
@@ -72,32 +117,66 @@
       </nav><!-- .navbar -->
 
     </div>
+
+
+
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
+    <secion>
+      <!-- <div id="video-carousel">
+        <video src="./assets/vids/intro.mp4" autoplay loop muted>
+        <div class="carousel position-absolute bottom-0 start-0 pb-4 ps-4 pe-4">
+        <h2>Who we are? </h2>
+        <p><strong>Concreto</strong> was established in 2019 to supply up to 5,000
+          m3 of high-quality ready-mix concrete for infrastructure,
+          heavy civil projects, building works, roads, bridges, and
+          transportation for the public and private sectors</p>
+        <p>The Company’s focus is the high-end market, and
+          investment was made into the most modern and technological Plants, Equipment, and Machinery</p>
+        <p>Today, we have become one of the key players in the construction industry in Egypt, emphasizing innovations that benefit multiple stakeholders</p>
+        </div>
+      </video>
+        </div> -->
+    </secion>
+
+
   <section id="hero">
     <div class="hero-container">
-      <div id="heroCarousel" data-bs-interval="6000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
+      <div id="heroCarousel" data-bs-interval="2000" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
         <div class="carousel-inner" role="listbox">
 
+          <!-- <video autoplay muted loop id="myVideo">
+            <source src="./assets/vids/intro.mp4" type="video/mp4">
+          </video> -->
+
           <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg);">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Who we are?</h2>
-                <p class="animate__animated animate__fadeInUp" style="text-shadow: 1px 1px 2px black;"><strong>Concreto</strong> was established in 2019 to supply up to 5,000
-                  m3 of high-quality ready-mix concrete for infrastructure,
-                  heavy civil projects, building works, roads, bridges, and
-                  transportation for the public and private sectors</p>
-                  <p class="animate__animated animate__fadeInUp" style="text-shadow: 1px 1px 2px black;">The Company’s focus is the high-end market, and
-                    investment was made into the most modern and
-                    technological Plants, Equipment, and Machinery</p>
-                    <p class="animate__animated animate__fadeInUp" style="text-shadow: 1px 1px 2px black;">Today, we have become one of the key players in the
-                      construction industry in Egypt, emphasizing innovations
-                      that benefit multiple stakeholders</p>
+          <div class="carousel-item active" >
+            <div class="carousel-container" class="align-items-center">
+
+                <div>
+                  <video src="./assets/vids/intro.mp4" autoplay loop muted></video>
+                  <div class="carousel position-absolute bottom-0 start-0 pb-4 ps-4 pe-4 ms-5 me-5 align-items-center" style="box-sizing: border-box; background-color: rgba(0, 0, 0, 0.5); color: #fff;text-shadow: 1px 1px 2px black;">
+                  <h2 class="text-center">Who we are?</h2>
+                  <p ><strong>Concreto</strong> was established in 2019 to supply up to 5,000 m3 of high-quality ready-mix concrete for infrastructure, heavy civil projects, building works, roads, bridges, and transportation for the public and private sectors</p>
+                  <p >The Company’s focus is the high-end market, and investment was made into the most modern and technological Plants, Equipment, and Machinery</p>
+                  <p >Today, we have become one of the key players in the construction industry in Egypt, emphasizing innovations that benefit multiple stakeholders</p>
+                  </div>
+                  </div>
+
+                  <!-- <h2 class="animate__animated animate__fadeInDown">Who we are?</h2>
+                  <p class="animate__animated animate__fadeInUp" style="text-shadow: 1px 1px 2px black;"><strong>Concreto</strong> was established in 2019 to supply up to 5,000
+                    m3 of high-quality ready-mix concrete for infrastructure,
+                    heavy civil projects, building works, roads, bridges, and
+                    transportation for the public and private sectors</p>
+            <h2 class="animate__animated animate__fadeInDown">Who we are?</h2>
+            <p class="animate__animated animate__fadeInUp" style="text-shadow: 1px 1px 2px black;">The Company’s focus is the high-end market, and
+                        investment was made into the most modern and technological Plants, Equipment, and Machinery</p>
+            <p class="animate__animated animate__fadeInUp" style="text-shadow: 1px 1px 2px black;">Today, we have become one of the key players in the construction industry in Egypt, emphasizing innovations that benefit multiple stakeholders</p> -->
+
+
+
                 <!-- <div>
                   <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
                 </div> -->
@@ -239,6 +318,8 @@
   
         </div>
       </section>
+
+      
     <!-- ======= About Section 2 ======= -->
     <section id="about" class="about">
       <div class="container">
@@ -370,8 +451,8 @@
     </section>End Services Section -->
 
 
-    <section id="Latest-projects" class="portfolio">
-      <div class="container">
+    <section id="Latest-projects" class="portfolio" style="background-color: rgb(57 55 55);">
+      <div class="container" >
 
         <div class="section-title">
           <h2>Sectors</h2>
@@ -404,7 +485,7 @@
                 <p></p>
                 <div class="portfolio-links">
                   <!-- <a href="assets/img/sectors/residential.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Residential"><i class="bx bx-plus"></i></a> -->
-                  <a href="sectors.html" title="More Details"><strong>Residential</strong></a>
+                  <a href="sectors.html#residential" title="More Details"><strong>Residential</strong></a>
                 </div>
               </div>
             </div>
@@ -417,7 +498,7 @@
                 <p></p>
                 <div class="portfolio-links text-center align-items-center">
                   <!-- <a href="assets/img/sectors/comercial.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Commercial"><i class="bx bx-plus"></i></a> -->
-                  <a href="sectors.html" title="More Details"><strong>Commercial</strong></a>
+                  <a href="sectors.html#commercial" title="More Details"><strong>Commercial</strong></a>
                 </div>
               </div>
             </div>
@@ -431,7 +512,7 @@
                 <p></p>
                 <div class="portfolio-links">
                   <!-- <a href="assets/img/sectors/bridges.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Roads and Bridges"><i class="bx bx-plus"></i></a> -->
-                  <a href="sectors.html" title="More Details"><strong>Roads and Bridges</strong></a>
+                  <a href="sectors.html#roads" title="More Details"><strong>Roads and Bridges</strong></a>
                 </div>
               </div>
             </div>
@@ -448,7 +529,7 @@
                 <p></p>
                 <div class="portfolio-links">
                   <!-- <a href="assets/img/sectors/water.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Water Stations"><i class="bx bx-plus"></i></a> -->
-                  <a href="sectors.html" title="More Details"><strong>Water Stations</strong></a>
+                  <a href="sectors.html#waterstations" title="More Details"><strong>Water Stations</strong></a>
                 </div>
               </div>
             </div>
@@ -561,7 +642,7 @@
                 <p></p>
                 <div class="portfolio-links">
                   <!-- <a href="assets/img/portfolio/slide-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Concrete 1"><i class="bx bx-plus"></i></a> -->
-                  <a href="portfolio-details.html" title="More Details"><strong>Sawary Project</strong></a>
+                  <a href="latest-projects.html#sawary" title="More Details"><strong>Sawary Project</strong></a>
                 </div>
               </div>
             </div>
@@ -575,7 +656,7 @@
                 <p></p>
                 <div class="portfolio-links">
                   <!-- <a href="assets/img/portfolio/building-2.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Building 3"><i class="bx bx-plus"></i></a> -->
-                  <a href="portfolio-details.html" title="More Details"><strong>New El-Alamein City Project</strong></a>
+                  <a href="latest-projects.html#alamen" title="More Details"><strong>New El-Alamein City Project</strong></a>
                 </div>
               </div>
             </div>
@@ -589,7 +670,7 @@
                 <p></p>
                 <div class="portfolio-links">
                   <!-- <a href="assets/img/portfolio/slide-2.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Concrete 2"><i class="bx bx-plus"></i></a> -->
-                  <a href="portfolio-details.html" title="More Details"><strong>Smouha project</strong></a>
+                  <a href="latest-projects.html#valore" title="More Details"><strong>Smouha project</strong></a>
                 </div>
               </div>
             </div>
@@ -603,7 +684,7 @@
                 <p></p>
                 <div class="portfolio-links">
                   <!-- <a href="assets/img/portfolio/road-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Road 2"><i class="bx bx-plus"></i></a> -->
-                  <a href="portfolio-details.html" title="More Details"><strong>Muruj Smouha</strong></a>
+                  <a href="latest-projects.html#muruj" title="More Details"><strong>Muruj Smouha</strong></a>
                 </div>
               </div>
             </div>
@@ -617,7 +698,7 @@
                 <p></p>
                 <div class="portfolio-links">
                   <!-- <a href="assets/img/portfolio/building.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Building 2"><i class="bx bx-plus"></i></a> -->
-                  <a href="portfolio-details.html" title="More Details"><strong>Almaza Bay</strong></a>
+                  <a href="latest-projects.html#almaza" title="More Details"><strong>Almaza Bay</strong></a>
                 </div>
               </div>
             </div>
@@ -631,7 +712,7 @@
                 <p></p>
                 <div class="portfolio-links">
                   <!-- <a href="assets/img/portfolio/slide.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Concrete 3"><i class="bx bx-plus"></i></a> -->
-                  <a href="portfolio-details.html" title="More Details"><strong>Alex West</strong></a>
+                  <a href="latest-projects.html#alexwest" title="More Details"><strong>Alex West</strong></a>
                 </div>
               </div>
             </div>
@@ -645,7 +726,7 @@
                 <p></p>
                 <div class="portfolio-links">
                   <!-- <a href="assets/img/portfolio/road.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Roads 1"><i class="bx bx-plus"></i></a> -->
-                  <a href="portfolio-details.html" title="More Details"><strong>Sea Shell</strong></a>
+                  <a href="latest-projects.html#seashell" title="More Details"><strong>Sea Shell</strong></a>
                 </div>
               </div>
             </div>
@@ -659,7 +740,7 @@
                 <p></p>
                 <div class="portfolio-links">
                   <!-- <a href="assets/img/portfolio/road-4.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Road 2"><i class="bx bx-plus"></i></a> -->
-                  <a href="portfolio-details.html" title="More Details"><strong>Palm hills</strong></a>
+                  <a href="latest-projects.html#palmhills" title="More Details"><strong>Palm hills</strong></a>
                 </div>
               </div>
             </div>
@@ -673,7 +754,7 @@
                 <p></p>
                 <div class="portfolio-links">
                   <!-- <a href="assets/img/portfolio/building-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="building 3"><i class="bx bx-plus"></i></a> -->
-                  <a href="portfolio-details.html" title="More Details"><strong>Alforat Development</strong></a>
+                  <a href="latest-projects.html#alforat" title="More Details"><strong>Alforat Development</strong></a>
                 </div>
               </div>
             </div>
@@ -687,7 +768,7 @@
                 <p></p>
                 <div class="portfolio-links">
                   <!-- <a href="assets/img/portfolio/building-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="building 3"><i class="bx bx-plus"></i></a> -->
-                  <a href="portfolio-details.html" title="More Details"><strong>Burj Al Arab Bridge</strong></a>
+                  <a href="latest-projects.html#burjbridge" title="More Details"><strong>Burj Al Arab Bridge</strong></a>
                 </div>
               </div>
             </div>
@@ -701,7 +782,7 @@
                 <p></p>
                 <div class="portfolio-links">
                   <!-- <a href="assets/img/portfolio/building-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="building 3"><i class="bx bx-plus"></i></a> -->
-                  <a href="portfolio-details.html" title="More Details"><strong>Qabari Bridge</strong></a>
+                  <a href="latest-projects.html#qabaribridge" title="More Details"><strong>Qabari Bridge</strong></a>
                 </div>
               </div>
             </div>
@@ -715,7 +796,7 @@
                 <p></p>
                 <div class="portfolio-links">
                   <!-- <a href="assets/img/portfolio/building-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="building 3"><i class="bx bx-plus"></i></a> -->
-                  <a href="portfolio-details.html" title="More Details"><strong>Wadi elkamar Bridge
+                  <a href="latest-projects.html#wadibridge" title="More Details"><strong>Wadi elkamar Bridge
                   </strong></a>
                 </div>
               </div>
@@ -734,7 +815,7 @@
                 <p></p>
                 <div class="portfolio-links">
                   <!-- <a href="assets/img/portfolio/building-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="building 3"><i class="bx bx-plus"></i></a> -->
-                  <a href="portfolio-details.html" title="More Details"><strong>Nubaria Bridge
+                  <a href="latest-projects.html#nubariabridge" title="More Details"><strong>Nubaria Bridge
                   </strong></a>
                 </div>
               </div>
@@ -747,99 +828,166 @@
     </section><!-- End Portfolio Section -->
     <div id="clients" ></div>
 
-    <section class="section-bg" style="background-color:rgb(167, 167, 167) !important;">
+    <section class="section-bg" style="background-color:rgb(57 55 55) !important;">
 
       <div class="container">
 
 
-          <div class="section-title" style="color:#4d4c4c;">
+          <div class="section-title" style="color:rgb(243, 243, 243);">
           <h3 ><strong>OUR CLIENTS</strong></h3>
-          <p>Ultimate Customer Satisfaction is our goal and we will strive to the best of our ability to en- sure the same is achieved CONCRETO believes in establishing long term strategic relations- ships to customers to ensure that their latent and expected needs are well met. And it's been proved by our respected clients during this 3 years</p>
+          <p>Ultimate Customer Satisfaction is our goal and we will strive to the best of our ability to ensure the same is achieved CONCRETO believes in establishing long term strategic relations- ships to customers to ensure that their latent and expected needs are well met. And it's been proved by our respected clients during this 3 years</p>
         </div>
 
-        <div class="row no-gutters clients-wrap clearfix wow fadeInUp align-items-center" style="visibility: visible; animation-name: fadeInUp; color:#4d4c4c;">
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/10.png" class="img-fluid" alt="" >
+        <style>
+          img{
+    height:150px;
+    width:100%;
+  }
+  
+  div [class^="col-"]{
+    padding-left:5px;
+    padding-right:5px;
+  }
+  .card{
+    transition:0.5s;
+    cursor:pointer;
+  }
+  .card-title{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+  }
+  .card-title i{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+    color:#ffa710
+  }
+  .card-title i:hover{
+    transform: scale(1.25) rotate(100deg); 
+    color:#18d4ca;
+    
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+  .card-text{
+    height:80px;  
+  }
+  
+  .card::before, .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+  }
+  .card::before {
+    transform-origin: left top;
+  }
+  .card::after {
+    transform-origin: right bottom;
+  }
+  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+        </style>
+  
+  
+  
+        <div class="container mt-2">
+          <!--   <div class="card card-block mb-2">
+              <h4 class="card-title">Card 1</h4>
+              <p class="card-text">Welcom to bootstrap card styles</p>
+              <a href="#" class="btn btn-primary">Submit</a>
+            </div>   -->
+            <div class="row">
+              <div class="col-md-2 col-sm-4 mt-1 pt-1">
+                <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                <h4 class="card-title text-right"></h4>
+              <img src="./pics/10.png" alt="">
+                  <h5 class="card-title mt-3 mb-3 text-center">Elmasrya Development and Project Management</h5>
+            </div>
+              </div>
+  
+                <div class="col-md-2 col-sm-4 mt-1 pt-1" >
+                  <div class="card card-block" style="background-color: #4d4c4c;height:14rem;">
+                  <h4 class="card-title text-right"></h4>
+                <img src="./pics/elghonemy.png" alt="">
+                    <h5 class="card-title mt-3 mb-3 text-center">Elghonemy Steel</h5>
+              </div>
+              </div>
+  
+  
+              <div class="col-md-2 col-sm-4 mt-1 pt-1" >
+                <div class="card card-block" style="background-color: #4d4c4c;height:14rem;">
+                <h4 class="card-title text-right"></h4>
+              <img src="./pics/5.png" alt="">
+                  <h5 class="card-title mt-3 mb-3 text-center">Hassan Allam for Trading and Engineering</h5>
             </div>
             </div>
-            <p class="text-center">Elmasrya Development and Project Management</p>
+  
+  
+  
+            <div class="col-md-2 col-sm-4 mt-1 pt-1" >
+              <div class="card card-block" style="background-color: #4d4c4c;height:14rem;">
+              <h4 class="card-title text-right"></h4>
+            <img src="./pics/15.png" alt="">
+                <h5 class="card-title mt-3 mb-3 text-center">Elshams for Constructing</h5>
           </div>
-          
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/elghonemy.png" class="img-fluid" alt="" >
-            </div>
-            </div>
-            <p class="text-center">Elghonemy Steel</p>
           </div>
-        
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/5.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">Hassan Allam for Trading and Engineering</p>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/15.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">Elshams for Constructing</p>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/comet.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">Comet for Trading and Engineering</p>
-          </div>
-        
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/12.png" class="img-fluid" alt="">
-            </div>
-          </div>
-            <p class="text-center">Giza General Contracting and Real Estate investment</p>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/13.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">REDCON Construction Co.</p>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/elsewedy.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">ElSewedy Cables</p>
-          </div>
-
-
+  
+          <div class="col-md-2 col-sm-4 mt-1 pt-1 mb-1" >
+            <div class="card card-block" style="background-color: #4d4c4c;height:14rem;">
+            <h4 class="card-title text-right"></h4>
+          <img src="./pics/comet.png" alt="">
+              <h5 class="card-title mt-3 mb-3 text-center">Comet for Trading and Engineering</h5>
         </div>
+        </div>
+  
+        <div class="col-md-2 col-sm-4 mt-1 pt-1 mb-1" >
+          <div class="card card-block" style="background-color: #4d4c4c;height:14rem;">
+          <h4 class="card-title text-right"></h4>
+        <img src="./pics/12.png" alt="">
+            <h5 class="card-title mt-3 mb-3 text-center">Giza General Contracting and Real Estate investment</h5>
       </div>
+      </div>
+          
+      <div class="col-md-2 col-sm-4 mt-1 pt-1 mb-1" >
+        <div class="card card-block" style="background-color: #4d4c4c;height:14rem;">
+        <h4 class="card-title text-right"></h4>
+      <img src="./pics/13.png" alt=''>
+          <h5 class="card-title mt-3 mb-3 text-center">REDCON Construction Co.</h5>
+    </div>
+    </div>
+  
+    <div class="col-md-2 col-sm-4 mt-1 pt-1 mb-1" >
+      <div class="card card-block" style="background-color: #4d4c4c;height:14rem;">
+      <h4 class="card-title text-right"></h4>
+    <img src="./pics/elsewedy.png" alt="Photo of sunset">
+        <h5 class="card-title mt-3 mb-3 text-center">ElSewedy Cables</h5>
+  </div>
+  </div>
+          
+          
+            </div>
+            
+          </div>
 
-      <div class="col-md-12 text-center align-items-center">
+      <div class="col-md-12 pt-2 text-center align-items-center">
         <!-- <button type="button" class="btn btn-danger" ><a href='' style="color:white;"></a></button> -->
         <a class="btn btn-primary text-center" href="clients.html" role="button" style="background-color:#853211; border-radius: 6px; border-color: #853211;" ><strong>See More</strong></a>
       </div>
     </section>
+
+
+
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     <!-- <section id="faq" class="faq section-bg">
@@ -982,6 +1130,9 @@
 
       </div>
     </section><!-- End Contact Section -->
+
+
+
 
   </main><!-- End #main -->
 
@@ -1136,7 +1287,16 @@
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/smoothscroll.js"></script>
   <script src="assets/js/wow.min.js"></script> -->
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js" integrity="sha512-sNNbKj96oJw08b+1IgsmRoJYm0b+t7xzzmE1CxZFWJm0lDFwx0Cw8ObmyBbH7VdDvN9QaGfgMlRbav7hxjKv+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script>
+ // Pause video when user scrolls
+ window.addEventListener('scroll', function() {
+ var video = document.querySelector('#video-carousel video');
+ if (video) {
+ video.pause();
+ }
+ });
+</script> -->
 
 </body>
 

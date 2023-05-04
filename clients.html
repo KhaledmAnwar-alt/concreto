@@ -79,12 +79,12 @@
     </section><!-- End Portfolio Section -->
     <div id="clients" ></div>
 
-    <section class="section-bg" style="background-color:rgb(167, 167, 167) !important;">
+    <section class="section-bg" style="background-color:rgb(66, 66, 66) !important;">
 
       <div class="container">
 
 
-          <div class="section-title" style="color:#4d4c4c;">
+          <div class="section-title" style="color:rgb(243, 243, 243);">
           <h3 ><strong>OUR CLIENTS</strong></h3>
           <p>Over the past three years, we have put our customers'
             needs first and foremost, as a result, we have established
@@ -92,224 +92,292 @@
             of a premium welcome service. During these few
             periods, we have a large customer base</p>
         </div>
-
-        <div class="row no-gutters clients-wrap clearfix wow fadeInUp align-items-center" style="visibility: visible; animation-name: fadeInUp; color:#4d4c4c;">
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/10.png" class="img-fluid" alt="" >
+        <style>
+          img{
+    height:150px;
+    width:100%;
+  }
+  
+  div [class^="col-"]{
+    padding-left:5px;
+    padding-right:5px;
+  }
+  .card{
+    transition:0.5s;
+    cursor:pointer;
+  }
+  .card-title{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+  }
+  .card-title i{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+    color:#ffa710
+  }
+  .card-title i:hover{
+    transform: scale(1.25) rotate(100deg); 
+    color:#18d4ca;
+    
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+  .card-text{
+    height:80px;  
+  }
+  
+  .card::before, .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+  }
+  .card::before {
+    transform-origin: left top;
+  }
+  .card::after {
+    transform-origin: right bottom;
+  }
+  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+        </style>
+  
+  
+  
+        <div class="container mt-2">
+          <!--   <div class="card card-block mb-2">
+              <h4 class="card-title">Card 1</h4>
+              <p class="card-text">Welcom to bootstrap card styles</p>
+              <a href="#" class="btn btn-primary">Submit</a>
+            </div>   -->
+            <div class="row">
+              <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                <h4 class="card-title text-right"></h4>
+              <img src="./pics/10.png" alt="Photo of sunset">
+                  <h5 class="card-title mt-3 mb-3 text-center">Elmasrya Development and Project Management</h5>
             </div>
-            </div>
-            <p class="text-center">Elmasrya Development and Project Management</p>
-          </div>
+              </div>
           
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/elghonemy.png" class="img-fluid" alt="" >
-            </div>
-            </div>
-            <p class="text-center">Elghonemy Steel</p>
-          </div>
-        
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/5.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">Hassan Allam for Trading and Engineering</p>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/15.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">Elshams for Constructing</p>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/comet.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">Comet for Trading and Engineering</p>
-          </div>
-        
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/12.png" class="img-fluid" alt="">
-            </div>
-          </div>
-            <p class="text-center">Giza General Contracting and Real Estate investment</p>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/13.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">REDCON Construction Co.</p>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/elsewedy.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">ElSewedy Cables</p>
-          </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/4.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">SEIF Real Estate</p>
-          </div>
+                <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                  <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                  <h4 class="card-title text-right"></h4>
+                <img src="./pics/elghonemy.png" alt="Photo of sunset">
+                    <h5 class="card-title mt-3 mb-3 text-center">Elghonemy Steel</h5>
+              </div>
+                </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/6.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">TASHEED for Real Estate Development and Investment</p>
-          </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/7.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">Con. Tech Construction Technology Cooperation</p>
-          </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/8.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">JUMEIRAH EGYPT Trading & Contracting S.A.E</p>
-          </div>
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/5.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">Hassan Allam for Trading and Engineering</h5>
+                </div>
+                  </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/9.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">ALFORAT Development</p>
-          </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/11.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">FIRST GROUP for General Trading & Contracting</p>
-          </div>
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/15.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">Elshams for Constructing</h5>
+                </div>
+                  </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/14.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">Utilco for Engineering, Contracting & Supplies</p>
-          </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/16.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">GIECO</p>
-          </div>
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/comet.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">Comet for Trading and Engineering</h5>
+                </div>
+                  </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/17.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">Talaat Mostafa Group</p>
-          </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/18.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">Tatweer Masr</p>
-          </div>
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/12.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">Giza General Contracting and Real Estate investment</h5>
+                </div>
+                  </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/1111.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">PALM HILLS Developments</p>
-          </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/2222.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">SAWARY New Alexandria</p>
-          </div>
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/13.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">REDCON Construction Co.</h5>
+                </div>
+                  </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/3333.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">MURUJ Green City</p>
-          </div>
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/4444.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">ALEX WEST</p>
-          </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/5555.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">ALMAZA BAY</p>
-          </div>
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/elsewedy.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">ElSewedy Cables</h5>
+                </div>
+                  </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <div class="text-center">
-              <img src="./pics/6666.png" class="img-fluid" alt="">
-            </div>
-            </div>
-            <p class="text-center">VALORE for Real Estate Investment</p>
-          </div>
-          </div>
+
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/4.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">SEIF Real Estate</h5>
+                </div>
+                  </div>
+                  
+
+                  
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/6.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">TASHEED for Real Estate Development and Investment</h5>
+                </div>
+                  </div>
+
+
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/7.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">Con. Tech Construction Technology Cooperation</h5>
+                </div>
+                  </div>
+
+
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/8.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">JUMEIRAH EGYPT Trading & Contracting S.A.E</h5>
+                </div>
+                  </div>
+
+
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/9.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">ALFORAT Development</h5>
+                </div>
+                  </div>
+
+
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/11.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">FIRST GROUP for General Trading & Contracting</h5>
+                </div>
+                  </div>
+
+
+
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/14.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">Utilco for Engineering, Contracting & Supplies</h5>
+                </div>
+                  </div>
+
+
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/16.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">GIECO</h5>
+                </div>
+                  </div>
+
+
+
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/17.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">Talaat Mostafa Group</h5>
+                </div>
+                  </div>
+
+
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/18.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">Tatweer Masr</h5>
+                </div>
+                  </div>
+
+
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/1111.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">PALM HILLS Developments</h5>
+                </div>
+                  </div>
+
+
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/2222.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">SAWARY New Alexandria</h5>
+                </div>
+                  </div>
+
+
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/3333.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">MURUJ Green City</h5>
+                </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/4444.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">ALEX WEST</h5>
+                </div>
+                  </div>
+
+
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/5555.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">ALMAZA BAY</h5>
+                </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-6 mt-1 pt-1">
+                    <div class="card card-block" style="background-color: #4d4c4c; height:14rem;">
+                    <h4 class="card-title text-right"></h4>
+                  <img src="./pics/6666.png" alt="Photo of sunset">
+                      <h5 class="card-title mt-3 mb-3 text-center">VALORE for Real Estate Investment</h5>
+                </div>
+                  </div>
 
 
 </div>
